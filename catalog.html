@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-img" src="img/logo.svg" width="85" height="36" alt="Интернет-магазин «Мишка»">
+      </a>
+      <nav class="main-menu">
+        <button class="main-menu__toggle" type="button" name="button">Открыть меню</button>
+        <button class="main-menu__close" type="button" name="button">Закрыть меню</button>
+        <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
+        <a class="main-menu__link" href="form.html">Вязание на заказ</a>
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <input class="search__text" type="text" name="search-text" placeholder="Поиск по сайту">
+          <input class="search__submit" type="submit" name="search-submit" value="Искать">
+        </form>
+        <a class="main-menu__link" href="#">Корзина: пока пуста</a>
+      </nav>
+    </header>
+    <main class="page-catalog">
+      <h1 class="page-catalog__title">Каталог товаров</h1>
+      <section class="items">
+        <article class="item">
+          <a class="item__img-link" href="#">
+            <img class="item__img" src="img/item1.jpg" alt="Фото товара «Зайчик-попрыгайчик»">
+          </a>
+          <a class="item__title-link" href="#">
+            <h3 class="item__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="item__details">Рост 30 см, вес 200 г</p>
+          <span class="item__price">1 200 руб.</span>
+          <button class="item__cart" type="button" name="cart">В корзину</button>
+        </article>
+        <article class="item">
+          <a class="item__img-link" href="#">
+            <img class="item__img" src="img/item1.jpg" alt="Фото товара «Корзинка для белья»">
+          </a>
+          <a class="item__title-link" href="#">
+            <h3 class="item__title">Корзинка-для белья</h3>
+          </a>
+          <p class="item__details">Диаметр 15 см, высота 10 см</p>
+          <span class="item__price">690 руб.</span>
+          <button class="item__cart" type="button" name="cart">В корзину</button>
+        </article>
+        <article class="item">
+          <a class="item__img-link" href="#">
+            <img class="item__img" src="img/item1.jpg" alt="Фото товара «Большая корзинка для игрушек»">
+          </a>
+          <a class="item__title-link" href="#">
+            <h3 class="item__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="item__details">Диаметр 30 см, высота 30 см</p>
+          <span class="item__price">1 500 руб.</span>
+          <button class="item__cart" type="button" name="cart">В корзину</button>
+        </article>
+      </section>
+      <section class="video">
+        <h3 class="video__title">Процесс производства</h3>
+        <div class="video__player">
+          <img class="video__screenshot" src="img/1.jpg" width="260" height="150" alt="Процесс производства наших товаров">
+        </div>
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="btn" type="button" name="order">Сделать заказ</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="social">
+        <a class="social__link social__link--insta" href="#">Мы в Инстаграме</a>
+        <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
+        <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
+      </div>
+      <div class="copyright">
+        <p class="copyright__title">Разработано</p>
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__options">Выберите размер:</p>
+      <span class="modal__size">S</span>
+      <span class="modal__size">M</span>
+      <span class="modal__size">L</span>
+      <button class="modal__btn" type="button" name="button">Добавить</button>
+    </div>
+  </body>
+</html>
