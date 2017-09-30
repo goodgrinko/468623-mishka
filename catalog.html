@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -20,9 +21,9 @@
         </form>
         <a class="main-menu__link" href="#">Корзина: пока пуста</a>
       </nav>
+      <h1 class="page-header__title">Каталог товаров</h1>
     </header>
     <main class="page-catalog">
-      <h1 class="page-catalog__title">Каталог товаров</h1>
       <section class="items">
         <article class="item">
           <a class="item__img-link" href="#">
@@ -33,7 +34,7 @@
           </a>
           <p class="item__details">Рост 30 см, вес 200 г</p>
           <span class="item__price">1 200 руб.</span>
-          <button class="item__cart" type="button" name="cart">В корзину</button>
+          <a class="item__cart" href="#">В корзину</a>
         </article>
         <article class="item">
           <a class="item__img-link" href="#">
@@ -44,7 +45,7 @@
           </a>
           <p class="item__details">Диаметр 15 см, высота 10 см</p>
           <span class="item__price">690 руб.</span>
-          <button class="item__cart" type="button" name="cart">В корзину</button>
+          <a class="item__cart" href="#">В корзину</a>
         </article>
         <article class="item">
           <a class="item__img-link" href="#">
@@ -55,7 +56,7 @@
           </a>
           <p class="item__details">Диаметр 30 см, высота 30 см</p>
           <span class="item__price">1 500 руб.</span>
-          <button class="item__cart" type="button" name="cart">В корзину</button>
+          <a class="item__cart" href="#">В корзину</a>
         </article>
       </section>
       <section class="video">
@@ -64,7 +65,7 @@
           <img class="video__screenshot" src="img/1.jpg" width="260" height="150" alt="Процесс производства наших товаров">
         </div>
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="btn" type="button" name="order">Сделать заказ</button>
+        <a class="btn" href="#">Сделать заказ</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -81,10 +82,15 @@
     <div class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__options">Выберите размер:</p>
-      <span class="modal__size">S</span>
-      <span class="modal__size">M</span>
-      <span class="modal__size">L</span>
-      <button class="modal__btn" type="button" name="button">Добавить</button>
+      <form class="modal__form" action="index.html" method="post">
+        <input class="modal__size-radio" type="radio" name="size" value="S" id="S">
+        <label class="modal__size" for="S">S</label>
+        <input class="modal__size-radio" type="radio" name="size" value="M" id="M">
+        <label class="modal__size" for="M">M</label>
+        <input class="modal__size-radio" type="radio" name="size" value="L" id="L">
+        <label class="modal__size" for="L">L</label>
+        <button class="btn btn--modal" type="submit" name="btn-size">Добавить</button>
+      </form>
     </div>
   </body>
 </html>
