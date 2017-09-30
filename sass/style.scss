@@ -1,0 +1,148 @@
+@import "global.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "block/page-header.scss";
+@import "block/main-menu.scss";
+
+
+/*global.scss*/
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*variables.scss*/
+$grey: #fafafa;
+$borderColor: #ececec;
+
+/*page-header.scss*/
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    margin: 22px 30px;
+    width: 86px;
+    height: 35px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 85px;
+    text-align: center;
+    font: {
+      size: 27px;
+      weight: bold;
+    }
+    line-height: 30px;
+  }
+
+  &__title--index {
+    min-height: 220px;
+    background: {
+      color: $grey;
+      image: url("../img/hero-mobile@1x.jpg");
+      position: 50% 0%;
+    }
+  }
+}
+
+/*main-menu.scss*/
+.main-menu {
+  align-self: center;
+  min-width: 320px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__wrapper {
+    list-style: none;
+    align-self: flex-start;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding: 30px 0 30px 70px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid $borderColor;
+
+    &--catalog,
+    &--cart {
+      border-top: 1px solid $borderColor;
+    }
+
+    &--cart::before {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: 25px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icon-cart.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__toggle {
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    top: 32px;
+    right: 31px;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/icon-menu-open.svg");
+  }
+}
+
+.search {
+  display: flex;
+  padding: 30px 0 30px 70px;
+
+  &__text {
+    height: 30px;
+    order: 2;
+    border: none;
+
+    &::placeholder {
+      opacity: 1;
+      color: #000000;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  }
+
+  &__submit {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    order: 1;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+    background: url("../img/icon-search.svg") no-repeat;
+  }
+}
