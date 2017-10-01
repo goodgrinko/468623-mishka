@@ -234,17 +234,17 @@ $borderColor: #ececec;
     line-height: 24px;
     font-weight: bold;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    min-width: 320px;
-    height: 7px;
-    background-image: url("../img/zigzag-line.png");
-    background-repeat: no-repeat;
-  }
+.zigzag::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  min-width: 320px;
+  height: 7px;
+  background-image: url("../img/zigzag-line.png");
+  background-repeat: no-repeat;
 }
 
 .btn {
@@ -258,6 +258,17 @@ $borderColor: #ececec;
   text-align: center;
   color: #444444;
   border: 2px solid #444444;
+
+  &--writeus {
+    margin: 0 30px 30px;
+  }
+
+  &--modal {
+    min-width: 260px;
+    color: white;
+    background-color: #63d1bb;
+    border: none;
+  }
 }
 
 .features {
@@ -331,7 +342,8 @@ $borderColor: #ececec;
 }
 
 .reviews {
-  padding: 0 30px;
+  position: relative;
+  padding: 0 30px 50px;
 
   &__item {
     padding-bottom: 30px;
@@ -364,13 +376,13 @@ $borderColor: #ececec;
   &__arrow {
     display: inline-block;
     vertical-align: middle;
+    white-space: nowrap;
     width: 128px;
     height: 52px;
     padding: 0;
     margin-bottom: 20px;
     text-indent: 100%;
     overflow: hidden;
-    white-space: nowrap;
     background-color: transparent;
     border: 1px solid #ececec;
 
@@ -390,5 +402,185 @@ $borderColor: #ececec;
       }
       border-right: none;
     }
+  }
+}
+
+.contacts {
+  &__wrapper {
+    padding: 30px 30px;
+    border: none;
+    color: #444444;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+
+  &__title {
+    padding-left: 30px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__parameter {
+    font-weight: normal;
+    vertical-align: top;
+  }
+
+  &__value {
+    padding-left: 20px;
+
+    &--email {
+      border-bottom: 1px solid #62d1ba;
+    }
+
+    &--address {
+      padding-right: 30px;
+    }
+  }
+}
+
+.map {
+  position: relative;
+  margin-bottom: 30px;
+
+  &__marker::after {
+    content: "";
+    width: 67px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid $borderColor;
+
+  &__link {
+    width: 22px;
+    height: 29px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &--insta {
+      margin-right: 20px;
+      background: {
+        image: url("../img/icon-insta.svg");
+        position: 0 100%;
+        repeat: no-repeat;
+      }
+    }
+
+    &--fb {
+      margin-right: 15px;
+      background: {
+        image: url("../img/icon-fb.svg");
+        position: 0 100%;
+        repeat: no-repeat;
+      }
+    }
+
+    &--twitter {
+      background: {
+        image: url("../img/icon-twitter.svg");
+        position: 0 100%;
+        repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.copyright {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  &__link {
+    width: 30px;
+    height: 35px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: {
+      image: url("../img/htmlacademy.svg");
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+}
+
+.modal {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  min-height: 326px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  &__title {
+    padding: 0 30px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__options{
+    padding: 0 30px;
+    color: #444444;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 0 30px 46px;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__size {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 78px;
+    min-height: 32px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #444444;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 16px;
+    border: 2px solid $borderColor;
   }
 }
