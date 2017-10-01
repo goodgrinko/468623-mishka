@@ -29,4 +29,10 @@
       position: 50% 20%;
     }
   }
+
+  &__title--inner {
+    min-width: 768px;
+    min-height: 107px;
+    background-color: #f1f1f1;
+  }
 }

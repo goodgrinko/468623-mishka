@@ -1,0 +1,51 @@
+.item {
+  width: 260px;
+  margin-bottom: 30px;
+  border: 1px solid $borderColor;
+
+  &__title {
+    display: block;
+    padding-left: 28px;
+    margin: 21px 0 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    color: black;
+  }
+
+  &__details {
+    margin: 0 28px 22px;
+    padding-bottom: 21px;
+    font-size: 13px;
+    line-height: 30px;
+    color: $textColor;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 28px;
+  }
+
+  &__price {
+    display: block;
+    padding-bottom: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  &__cart {
+    display: block;
+    width: 21px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0.2;
+    background: {
+      image: url("../img/icon-cart.svg");
+      repeat: no-repeat;
+    }
+  }
+}
