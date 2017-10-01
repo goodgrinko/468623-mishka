@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    margin: 22px 30px;
+    width: 86px;
+    height: 35px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 70px;
+    text-align: center;
+    font: {
+      size: 27px;
+      weight: bold;
+    }
+    line-height: 30px;
+  }
+
+  &__title--index {
+    min-height: 213px;
+    background: {
+      color: $grey;
+      image: url("../img/hero-mobile@1x.jpg");
+      position: 50% 20%;
+    }
+  }
+}

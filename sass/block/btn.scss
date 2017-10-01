@@ -1,0 +1,23 @@
+.btn {
+  display: block;
+  min-width: 236px;
+  padding: 14px 10px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $textColor;
+  border: 2px solid $textColor;
+
+  &--writeus {
+    margin: 0 30px 39px;
+  }
+
+  &--modal {
+    min-width: 260px;
+    color: white;
+    background-color: #63d1bb;
+    border: none;
+  }
+}

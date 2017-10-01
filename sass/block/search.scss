@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  padding: 30px 0 30px 40px;
+
+  &__text {
+    height: 30px;
+    order: 2;
+    border: none;
+    font-size: 17px;
+    line-height: 30px;
+    color: black;
+
+    &::placeholder {
+      opacity: 1;
+      color: black;
+      font-size: 17px;
+      font-weight: bold;
+      font-family: "OpenSans", "Arial", sans-serif;
+    }
+  }
+
+  &__submit {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    padding: 0;
+    order: 1;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    background: {
+      image: url("../img/icon-search.svg");
+      repeat: no-repeat;
+    }
+  }
+}

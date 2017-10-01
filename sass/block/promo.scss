@@ -1,0 +1,50 @@
+.promo {
+  &__item {
+    display: block;
+    position: relative;
+    min-width: 320px;
+    min-height: 80px;
+    padding: 23px 0 0 27px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    &--interier {
+      background-color: #3cdabb;
+
+      &::after {
+        content: "";
+        width: 41px;
+        height: 62px;
+        position: absolute;
+        top: 22%;
+        right: 18%;
+        opacity: 0.5;
+        background: {
+          image: url("../img/icon-interior.svg");
+          position: 100% 0;
+          repeat: no-repeat;
+        }
+      }
+    }
+
+    &--toys {
+      background-color: #2accb3;
+
+      &::after {
+        content: "";
+        width: 61px;
+        height: 61px;
+        position: absolute;
+        top: 20%;
+        right: 15%;
+        opacity: 0.5;
+        background: {
+          image: url("../img/icon-toy.svg");
+          position: 100% 0;
+          repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
