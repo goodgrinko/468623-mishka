@@ -1,0 +1,27 @@
+.copyright {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin: 28px 25px 30px 4px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  &__link {
+    display: block;
+    width: 40px;
+    height: 51px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: {
+      image: url("../img/htmlacademy.svg");
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+}

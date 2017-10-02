@@ -1,0 +1,40 @@
+.contacts {
+  &__wrapper {
+    margin-top: 26px;
+    padding: 23px 26px 34px;
+    border: none;
+    color: $textColor;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+
+  &__title {
+    padding-left: 28px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__parameter {
+    padding-right: 27px;
+    font-weight: normal;
+    vertical-align: top;
+
+    &--address {
+      padding-top: 26px;
+    }
+  }
+
+  &__value {
+    &--email {
+      border-bottom: 1px solid #62d1ba;
+    }
+
+    &--address {
+      padding-top: 26px;
+      padding-right: 30px;
+    }
+  }
+}

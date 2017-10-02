@@ -1,0 +1,12 @@
+.zigzag::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  min-width: 320px;
+  height: 7px;
+  background: {
+    image: url("../img/zigzag-line.png");
+    repeat: no-repeat;
+  }
+}

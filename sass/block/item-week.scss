@@ -1,0 +1,58 @@
+.item-week {
+  padding: 0 30px 50px;
+  position: relative;
+
+  &__title {
+    margin: 27px 0 5px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  &__category {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #63d1bb;
+  }
+
+  &__description {
+    margin: 20px 0 18px;
+    font-size: 15px;
+    line-height: 24px;
+    color: $textColor;
+  }
+
+  &__features {
+    margin-bottom: 29px;
+    border: none;
+    border-spacing: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: $textColor;
+  }
+
+  &__parameter {
+    padding: 10px 0 9px;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__value {
+    min-width: 160px;
+    padding: 10px 0 9px 30px;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__price {
+    display: block;
+    padding: 19px 0 26px;
+    text-align: center;
+    color: $textColor;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}
