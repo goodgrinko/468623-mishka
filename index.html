@@ -7,24 +7,27 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="img/logo-mobile.svg" width="85" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
       <nav class="main-menu">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo-mobile.svg" width="85" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
         <button class="main-menu__toggle" type="button" name="button">Открыть меню</button>
-        <section class="main-menu__list">
-          <div class="main-menu__wrapper">
-            <a class="main-menu__link main-menu__link--catalog" href="catalog.html">Каталог товаров</a>
-            <a class="main-menu__link" href="form.html">Вязание на заказ</a>
-          </div>
-          <div class="main-menu__wrapper">
-            <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search__text" type="search" name="search-text" placeholder="Поиск по сайту">
-              <input class="search__submit" type="submit" name="search-submit" value="Искать">
-            </form>
-            <a class="main-menu__link main-menu__link--cart" href="#">Корзина: пока пуста</a>
-          </div>
-        </section>
+        <div class="main-menu__wrapper main-menu__wrapper--pages">
+          <a class="main-menu__link main-menu__link--catalog" href="catalog.html">Каталог товаров</a>
+          <a class="main-menu__link main-menu__link--handmade" href="form.html">Вязание на заказ</a>
+        </div>
+        <div class="main-menu__wrapper main-menu__wrapper--tools">
+          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search__text" type="search" name="search-text" placeholder="Поиск по сайту">
+            <input class="search__submit" type="submit" name="search-submit" value="Искать">
+          </form>
+          <a class="main-menu__link main-menu__link--cart" href="#">Корзина: пока пуста</a>
+        </div>
+        <div class="main-menu__wrapper main-menu__wrapper--promo">
+          <a class="main-menu__link main-menu__link--new" href="#">Новые поступления</a>
+          <a class="main-menu__link main-menu__link--sale" href="#">Распродажа</a>
+        </div>
+        <span class="main-menu__text">Бесплатная доставка по России</span>
       </nav>
       <h1 class="page-header__title page-header__title--index">Милые&nbsp;штучки ручной работы&nbsp;для&nbsp;дома</h1>
     </header>

@@ -2,16 +2,14 @@
   align-self: center;
   min-width: 320px;
 
-  &__list {
-    display: none;
-    margin: 0;
-    padding: 0;
-  }
-
   &__wrapper {
     list-style: none;
     align-self: flex-start;
     padding: 0;
+
+    &--promo {
+      display: none;
+    }
   }
 
   &__link {
@@ -53,5 +51,49 @@
     border: none;
     background-color: transparent;
     background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &__text {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__wrapper--tools {
+      order: 2;
+      display: flex;
+      min-width: 378px;
+    }
+
+    &__wrapper--pages {
+      display: flex;
+      order: 3;
+    }
+
+    &__link--catalog,
+    &__link--handmade {
+      padding: 25px 20px;
+      font-size: 15px;
+      line-height: 24px;
+      border: none;
+      background-color: #f9f9f9;
+    }
+
+    &__text {
+      display: block;
+      order: 4;
+      padding: 25px 20px;
+      background-color: #f9f9f9;
+    }
   }
 }

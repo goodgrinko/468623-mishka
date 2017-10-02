@@ -36,3 +36,14 @@
     }
   }
 }
+
+@media (min-width: $tablet) {
+  .search {
+    border-right: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+
+    &__text {
+      display: none;
+    }
+  }
+}
