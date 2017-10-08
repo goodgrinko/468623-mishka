@@ -1,49 +1,59 @@
 .search {
   display: flex;
-  padding: 30px 0 30px 40px;
+  padding: 30px 0 30px 34px;
+}
 
-  &__text {
-    height: 30px;
-    order: 2;
-    border: none;
-    font-size: 17px;
-    line-height: 30px;
+.search__text {
+  height: 30px;
+  order: 2;
+  border: none;
+  font-size: 17px;
+  line-height: 30px;
+  color: black;
+
+  &::placeholder {
+    opacity: 1;
     color: black;
-
-    &::placeholder {
-      opacity: 1;
-      color: black;
-      font-size: 17px;
-      font-weight: bold;
-      font-family: "OpenSans", "Arial", sans-serif;
-    }
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "OpenSans", "Arial", sans-serif;
   }
+}
 
-  &__submit {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-    padding: 0;
-    order: 1;
-    text-indent: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    border: none;
-    background: {
-      image: url("../img/icon-search.svg");
-      repeat: no-repeat;
-    }
+.search__submit {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  padding: 0;
+  order: 1;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  background: {
+    color: transparent;
+    image: url("../img/icon-search.svg");
+    repeat: no-repeat;
   }
 }
 
 @media (min-width: $tablet) {
   .search {
+    min-width: 20%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-right: 1px solid $borderColor;
     border-bottom: 1px solid $borderColor;
+  }
 
-    &__text {
-      display: none;
-    }
+  .search__text {
+    display: none;
+  }
+
+  .search__submit {
+    margin: 0;
   }
 }

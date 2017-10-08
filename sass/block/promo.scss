@@ -1,50 +1,61 @@
-.promo {
-  &__item {
-    display: block;
-    position: relative;
-    min-width: 320px;
-    min-height: 80px;
-    padding: 23px 0 0 27px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+.promo__item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 23px 0 23px 7%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    &--interier {
-      background-color: #3cdabb;
+.promo__item--interier {
+  background-color: #3cdabb;
 
-      &::after {
-        content: "";
-        width: 41px;
-        height: 62px;
-        position: absolute;
-        top: 22%;
-        right: 18%;
-        opacity: 0.5;
-        background: {
-          image: url("../img/icon-interior.svg");
-          position: 100% 0;
-          repeat: no-repeat;
-        }
-      }
+  &::after {
+    content: "";
+    width: 41px;
+    height: 62px;
+    position: absolute;
+    top: 22%;
+    right: 18%;
+    opacity: 0.5;
+    background: {
+      image: url("../img/icon-interior.svg");
+      position: 100% 0;
+      repeat: no-repeat;
     }
+  }
+}
 
-    &--toys {
-      background-color: #2accb3;
+.promo__item--toys {
+  background-color: #2accb3;
 
-      &::after {
-        content: "";
-        width: 61px;
-        height: 61px;
-        position: absolute;
-        top: 20%;
-        right: 15%;
-        opacity: 0.5;
-        background: {
-          image: url("../img/icon-toy.svg");
-          position: 100% 0;
-          repeat: no-repeat;
-        }
-      }
+  &::after {
+    content: "";
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    opacity: 0.5;
+    background: {
+      image: url("../img/icon-toy.svg");
+      position: 100% 0;
+      repeat: no-repeat;
     }
+  }
+}
+
+@media (min-width: $tablet) {
+  .promo {
+    display: flex;
+    padding: 0 50px;
+    background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: $desktop) {
+  .promo__item {
+    padding: 28px 0 28px 7%;
   }
 }
