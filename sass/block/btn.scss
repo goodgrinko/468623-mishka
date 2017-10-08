@@ -1,7 +1,8 @@
 .btn {
   display: block;
-  min-width: 236px;
+  width: 100%;
   padding: 14px 10px;
+  box-sizing: border-box;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -10,12 +11,16 @@
   color: $textColor;
   border: 2px solid $textColor;
 
+  &--item-week {
+    width: 260px;
+  }
+
   &--writeus {
-    margin: 0 30px 39px;
+    margin-left: 30px;
+    margin-bottom: 39px;
   }
 
   &--modal {
-    min-width: 260px;
     color: white;
     background-color: #63d1bb;
     border: none;

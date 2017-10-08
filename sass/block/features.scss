@@ -1,71 +1,91 @@
 .features {
   padding: 0 30px 19px;
+}
 
-  &__title {
-    margin: 19px 0;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
+.features__title {
+  margin: 19px 0;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__trait {
+  padding-top: 83px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+
+  &--material {
+    padding-top: 67px;
+    background: {
+      image: url("../img/icon-feature-flower.svg");
+      repeat: no-repeat;
+      position: 3% 19%;
+    }
   }
 
-  &__list {
-    list-style: none;
-    padding: 0;
+  &--style {
+    background: {
+      image: url("../img/icon-feature-money.svg");
+      repeat: no-repeat;
+      position: 0 31%;
+    }
   }
 
-  &__trait {
-    padding-top: 83px;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 20px;
-
-    &--material {
-      padding-top: 67px;
-      background: {
-        image: url("../img/icon-feature-flower.svg");
-        repeat: no-repeat;
-        position: 3% 19%;
-      }
+  &--like {
+    background: {
+      image: url("../img/icon-feature-heart.svg");
+      repeat: no-repeat;
+      position: 3% 37%;
     }
+  }
 
-    &--style {
-      background: {
-        image: url("../img/icon-feature-money.svg");
-        repeat: no-repeat;
-        position: 0 31%;
-      }
+  &--handmade {
+    background: {
+      image: url("../img/icon-feature-ball.svg");
+      repeat: no-repeat;
+      position: 2% 36%;
     }
+  }
 
-    &--like {
-      background: {
-        image: url("../img/icon-feature-heart.svg");
-        repeat: no-repeat;
-        position: 3% 37%;
-      }
+  &--brands {
+    background: {
+      image: url("../img/icon-feature-rocket.svg");
+      repeat: no-repeat;
+      position: 0 33%;
     }
+  }
 
-    &--handmade {
-      background: {
-        image: url("../img/icon-feature-ball.svg");
-        repeat: no-repeat;
-        position: 2% 36%;
-      }
+  &--gift {
+    background: {
+      image: url("../img/icon-feature-gift.svg");
+      repeat: no-repeat;
+      position: 1% 34%;
     }
+  }
+}
 
-    &--brands {
-      background: {
-        image: url("../img/icon-feature-rocket.svg");
-        repeat: no-repeat;
-        position: 0 33%;
-      }
-    }
+@media (min-width: $tablet) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 620px;
+  }
 
-    &--gift {
-      background: {
-        image: url("../img/icon-feature-gift.svg");
-        repeat: no-repeat;
-        position: 1% 34%;
-      }
-    }
+  .features__trait {
+    width: 210px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 }

@@ -5,38 +5,38 @@
   padding: 22px 0 29px;
   margin: 0 30px;
   border-bottom: 1px solid $borderColor;
+}
 
-  &__link {
-    width: 22px;
-    height: 29px;
-    text-indent: 100%;
-    overflow: hidden;
-    white-space: nowrap;
+.social__link {
+  width: 22px;
+  height: 29px;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 
-    &--insta {
-      margin-right: 41px;
-      background: {
-        image: url("../img/icon-insta.svg");
-        position: 0 100%;
-        repeat: no-repeat;
-      }
+  &--insta {
+    margin-right: 41px;
+    background: {
+      image: url("../img/icon-insta.svg");
+      position: 0 100%;
+      repeat: no-repeat;
     }
+  }
 
-    &--fb {
-      margin-right: 39px;
-      background: {
-        image: url("../img/icon-fb.svg");
-        position: 0 100%;
-        repeat: no-repeat;
-      }
+  &--fb {
+    margin-right: 39px;
+    background: {
+      image: url("../img/icon-fb.svg");
+      position: 0 100%;
+      repeat: no-repeat;
     }
+  }
 
-    &--twitter {
-      background: {
-        image: url("../img/icon-twitter.svg");
-        position: 0 100%;
-        repeat: no-repeat;
-      }
+  &--twitter {
+    background: {
+      image: url("../img/icon-twitter.svg");
+      position: 0 100%;
+      repeat: no-repeat;
     }
   }
 }
