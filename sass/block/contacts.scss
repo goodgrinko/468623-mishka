@@ -1,6 +1,6 @@
 .contacts__wrapper {
   margin-top: 26px;
-  padding: 23px 26px 34px;
+  padding: 23px 9% 34px;
   border: none;
   color: $textColor;
   font-size: 15px;
@@ -9,7 +9,7 @@
 }
 
 .contacts__title {
-  padding-left: 28px;
+  padding-left: 9%;
   text-align: left;
   font-size: 18px;
   line-height: 30px;
@@ -26,13 +26,96 @@
   }
 }
 
-.contacts__value {
-  &--email {
-    border-bottom: 1px solid #62d1ba;
+.contacts__value a {
+  padding-bottom: 2px;
+  color: $textColor;
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__value--address {
+  padding-top: 26px;
+  padding-right: 30px;
+}
+
+@media (min-width: $tablet) {
+  .contacts__wrapper {
+    padding: 0 7% 55px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  &--address {
-    padding-top: 26px;
-    padding-right: 30px;
+  .contacts__title {
+    width: 86%;
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0 7% 60px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 7%;
+      width: 47px;
+      height: 81px;
+      background: {
+        image: url("../img/icon-flag.svg");
+        repeat: no-repeat;
+        position: 50% 50%;
+      }
+    }
+  }
+
+  .contacts__wrapper tbody {
+    min-width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__wrapper tr {
+    width: 50%;
+  }
+
+  .contacts__parameter {
+    padding: 0 20px 0 0;
+  }
+
+  .contacts__value--address {
+    width: 220px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 8%;
+  }
+
+  .contacts__wrapper {
+    width: 50%;
+    padding-left: 175px;
+  }
+
+  .contacts__title {
+    padding-left: 175px;
+    width: auto;
+
+    &::after {
+      right: 80%;
+    }
+  }
+
+  .contacts__wrapper tbody {
+    flex-direction: column;
+  }
+
+  .contacts__value--address {
+    min-width: 223px;
   }
 }

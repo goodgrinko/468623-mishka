@@ -1,5 +1,5 @@
 .features {
-  padding: 0 30px 19px;
+  padding: 0 9% 19px;
 }
 
 .features__title {
@@ -12,6 +12,7 @@
 .features__list {
   list-style: none;
   padding: 0;
+  width: 250px;
 }
 
 .features__trait {
@@ -71,21 +72,46 @@
 }
 
 @media (min-width: $tablet) {
-  .features__list {
+  .features {
+    padding: 40px 7% 19px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 620px;
+  }
+
+  .features__list {
+    width: 50%;
+    box-sizing: border-box;
   }
 
   .features__trait {
-    width: 210px;
+    width: 300px;
     font-size: 20px;
     line-height: 22px;
+
+    &--handmade {
+      padding-top: 67px;
+    }
   }
 
   .features__title {
+    width: 100%;
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features {
+    padding: 40px 8% 19px;
+  }
+
+  .features__title {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list--1 {
+    padding-left: 175px;
   }
 }

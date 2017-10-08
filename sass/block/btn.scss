@@ -16,7 +16,8 @@
   }
 
   &--writeus {
-    margin-left: 30px;
+    width: 84%;
+    margin: 0 8%;
     margin-bottom: 39px;
   }
 
@@ -35,5 +36,29 @@
     min-width: 260px;
     margin-bottom: 55px;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet) {
+  .btn--reviews {
+    order: 2;
+    width: 25%;
+    height: 52px;
+    margin-top: 60px;
+  }
+
+  .btn--writeus {
+    margin: auto;
+    width: 230px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .btn--writeus {
+    position: relative;
+    top: -95px;
+    margin: 0;
+    margin-left: 175px;
   }
 }

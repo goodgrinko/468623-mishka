@@ -25,3 +25,10 @@
     position: center;
   }
 }
+
+@media (min-width: $tablet) {
+  .copyright {
+    order: 3;
+    width: 33.3%;
+  }
+}

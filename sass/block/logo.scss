@@ -6,6 +6,10 @@
   height: 35px;
 }
 
+.logo--bottom {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .logo {
     box-sizing: border-box;
@@ -16,6 +20,13 @@
     border-right: 1px solid $borderColor;
     border-bottom: 1px solid $borderColor;
   }
+
+  .logo--bottom {
+    order: 1;
+    display: block;
+    width: 33.3%;
+    border: none;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -23,5 +34,11 @@
     order: 2;
     width: 17%;
     padding-left: 0;
+  }
+
+  .logo--bottom {
+    order: 1;
+    width: 33.3%;
+    padding-left: 8%;
   }
 }

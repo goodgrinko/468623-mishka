@@ -68,10 +68,12 @@
       </section>
       <section class="features">
         <h2 class="features__title">Коротко о нас:</h2>
-        <ul class="features__list">
+        <ul class="features__list features__list--1">
           <li class="features__trait features__trait--material">Экологически чистые&nbsp;материалы</li>
           <li class="features__trait features__trait--style">Скандинавский стиль по&nbsp;российской цене</li>
           <li class="features__trait features__trait--like">Увеличивает лайки на&nbsp;фотографиях</li>
+        </ul>
+        <ul class="features__list">
           <li class="features__trait features__trait--handmade">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
           <li class="features__trait features__trait--brands">Поддержка отечественного производителя</li>
           <li class="features__trait features__trait--gift">Поставляется в подарочной&nbsp;упаковке</li>
@@ -98,14 +100,15 @@
           <button class="reviews__arrow reviews__arrow--previous" type="button" name="arrow-previous">Предыдущий отзыв</button>
           <button class="reviews__arrow reviews__arrow--next" type="button" name="arrow-next">Следующий отзыв</button>
         </div>
-        <a class="btn" href="#">Написать</a>
+        <a class="btn btn--reviews" href="#">Написать</a>
       </section>
       <section class="contacts">
         <table class="contacts__wrapper">
           <caption class="contacts__title">Контакты</caption>
           <tr>
             <th class="contacts__parameter">e-mail:</th>
-            <td class="contacts__value contacts__value--email">info@mimimishkashop.ru</td>
+            <td class="contacts__value contacts__value--email">
+              <a href="#">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <th class="contacts__parameter contacts__parameter--address">адрес:</th>
@@ -113,12 +116,14 @@
           </tr>
         </table>
         <div class="map map__marker">
-          <img class="map__img" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда">
         </div>
         <a class="btn btn--writeus" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
+      <div class="logo logo--bottom">
+        <img src="../img/logo-mobile.svg" width="85" height="35" alt="Интернет-магазин «Мишка»">
+      </div>
       <div class="social">
         <a class="social__link social__link--insta" href="#">Мы в Инстаграме</a>
         <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>

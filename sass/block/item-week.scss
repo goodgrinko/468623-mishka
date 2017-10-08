@@ -117,25 +117,27 @@
 
 @media (min-width: $desktop) {
   .item-week {
-    padding: 71px 4% 40px;
+    padding: 71px 8% 40px;
   }
 
   .item-week__category {
-    width: 26%;
+    width: 175px;
     order: 1;
-    padding: 0 8% 45px;
+    padding: 0 40px 45px;
   }
 
   .item-week__title {
     order: 2;
-    width: 74%;
+    width: 76%;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .item-week__wrapper {
     &--description {
       box-sizing: border-box;
       order: 3;
-      padding-left: 26%;
+      padding-left: 175px;
     }
 
     &--img {
@@ -145,7 +147,7 @@
 
     &--price {
       order: 5;
-      padding-left: 26%;
+      padding-left: 175px;
     }
   }
 
