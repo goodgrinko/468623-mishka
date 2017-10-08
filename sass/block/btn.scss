@@ -28,7 +28,7 @@
   }
 
   &--video {
-    min-width: 162px;
+    width: 192px;
     margin: 0 34px 32px;
   }
 
@@ -52,6 +52,11 @@
     width: 230px;
     margin-bottom: 40px;
   }
+
+  .btn--video {
+    order: 4;
+    width: 90%;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -60,5 +65,13 @@
     top: -95px;
     margin: 0;
     margin-left: 175px;
+  }
+
+  .btn--video {
+    position: relative;
+    top: -120px;
+    right: -38%;
+    width: 20%;
+    height: 52px;
   }
 }

@@ -7,3 +7,21 @@
   padding-top: 30px;
   padding-bottom: 58px;
 }
+
+@media (min-width: $tablet) {
+  .page-catalog {
+    margin: 0 7%;
+  }
+
+  .page-catalog__items {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-catalog__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

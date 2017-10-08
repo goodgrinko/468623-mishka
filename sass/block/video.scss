@@ -49,3 +49,55 @@
   line-height: 24px;
   color: $textColor;
 }
+
+@media (min-width: $tablet) {
+  .video {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video__player {
+    order: 1;
+    width: 100%;
+    height: 455px;
+    background-color: #ebeaed; // пока вместо картинки, чтобы было видно границы
+  }
+
+  .video__title {
+    order: 2;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .video__description {
+    order: 3;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .video {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 455px;
+    flex-wrap: wrap;
+  }
+
+  .video__player {
+    width: 65%;
+  }
+
+  .video__title {
+    width: 22%;
+  }
+
+  .video__description {
+    position: relative;
+    right: -66%;
+    top: -350px;
+    width: 22%;
+  }
+}

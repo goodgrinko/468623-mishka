@@ -19,7 +19,7 @@
 
 .page-header__title-wrapper {
   width: 100%;
-  min-height: 283px;
+  height: 283px;
   background: {
     color: $grey;
     image: url("../img/hero-mobile@1x.jpg");
@@ -29,15 +29,23 @@
 
 .page-header__title-wrapper--inner {
   width: 100%;
-  min-height: 107px;
-  background-color: #f1f1f1;
+  height: 186px;
+  background-color: #f9f9f9;
+  background-image: none;
 }
 
 @media (min-width: $tablet) {
   .page-header__title-wrapper {
-    min-height: 580px;
+    height: 580px;
     background-image: url("../img/hero-desktop-jpg.jpg");
     background-position: 50% 30%;
+  }
+
+  .page-header__title-wrapper--inner {
+    width: 100%;
+    height: 186px;
+    background-color: #f9f9f9;
+    background-image: none;
   }
 
   .page-header__title {
