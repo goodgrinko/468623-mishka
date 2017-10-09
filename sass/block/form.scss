@@ -2,29 +2,35 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   border: none;
   margin-bottom: 21px;
+  overflow: hidden;
 }
 
 .form__group-title {
-  position: relative;
-  margin-right: 320px;
+  width: 100%;
+  padding: 0;
+  padding-left: 7%;
   margin-bottom: 33px;
+  box-sizing: border-box;
   color: #63d1bb;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
+  background: url("../img/line.png") no-repeat;
+  background-position: 60px 50%;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 155%;
-    width: 198px;
-    height: 1px;
-    background-color: #63d1bb;
+  &--tel,
+  &--email {
+    padding: 0;
   }
+}
+
+.form__wrapper {
+  box-sizing: border-box;
+  padding: 0 7%;
 }
 
 .form__label {
@@ -100,7 +106,7 @@
 }
 
 .form__text {
-  min-width: 260px;
+  width: 100%;
   margin-bottom: 15px;
   border: none;
   font-size: 17px;
@@ -132,24 +138,101 @@
   }
 
   &--wishes {
-    min-width: 224px;
-    margin-right: 28px;
+    box-sizing: border-box;
+    width: 86%;
+    margin: 0 7%;
     padding: 17px;
     border: 2px solid $textColor;
   }
 }
 
 .form__name {
+  width: 100%;
   padding-bottom: 15px;
-  padding-right: 320px;
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
 }
 
 .form__note {
-  margin-bottom: 30px;
+  margin: 0 7% 30px;
   color: $textColor;
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet) {
+  .form__group--checkbox,
+  .form__wrapper--contacts {
+    background-color: #f1f1f1;
+  }
+
+  .form__wrapper {
+    width: 80%;
+
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--contacts {
+      width: 100%;
+    }
+  }
+
+  .form__group-title {
+    width: 18%;
+    position: relative;
+    top: 8px;
+    background: none;
+  }
+
+  .form__label--radio {
+    width: 67%;
+  }
+
+  .form__label--checkbox {
+    width: 20%;
+  }
+
+  .form__name {
+    width: 35%;
+  }
+
+  .form__text {
+    width: 70%;
+    border-bottom: 2px solid black;
+
+    &--tel,
+    &--email {
+      background-color: #f1f1f1;
+    }
+
+    &--wishes {
+      width: 67%;
+    }
+  }
+
+  .form__notes {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__note {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__label--checkbox {
+    width: 20%;
+  }
+
+  .form__notes {
+    box-sizing: border-box;
+    padding-left: 18%;
+  }
 }
