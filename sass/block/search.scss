@@ -49,20 +49,16 @@
 
 @media (min-width: $tablet) {
   .search {
-    min-width: 20%;
+    min-width: 21%;
+    min-height: 88px;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-right: 1px solid $borderColor;
-    border-bottom: 1px solid $borderColor;
   }
 
   .search__text {
     display: none;
-  }
-
-  .search__submit {
-    margin: 0;
   }
 }

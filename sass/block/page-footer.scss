@@ -5,5 +5,8 @@
 @media (min-width: $tablet) {
   .page-footer {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 143px;
   }
 }

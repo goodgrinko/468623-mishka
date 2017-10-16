@@ -121,25 +121,28 @@
     display: flex;
     width: 52%;
     height: 88px;
+    border-bottom: 1px solid $borderColor;
   }
 
   .main-menu__link--cart {
     margin: 0;
+    padding: 30px 10.5% 0 0;
     box-sizing: border-box;
-    width: 80%;
-    padding-left: 25%;
-    border-top: none;
+    text-align: right;
+    width: 78%;
+    border: none;
+  }
 
-    &::before {
-      top: 35%;
-      left: 14%;
-    }
+  .main-menu__icon-cart {
+    margin-right: 9%;
   }
 
   .main-menu__wrapper--pages {
     display: flex;
     box-sizing: border-box;
-    padding-left: 6%;
+    height: 100%;
+    padding-top: 18px;
+    padding-left: 6.2%;
     width: 50%;
     order: 3;
     background-color: #f9f9f9;
@@ -147,7 +150,7 @@
 
   .main-menu__link--catalog,
   .main-menu__link--handmade {
-    padding: 25px 0;
+    padding: 0;
     margin-right: 8%;
     font-size: 15px;
     line-height: 22px;
@@ -159,28 +162,28 @@
     text-align: right;
     display: block;
     width: 50%;
+    height: 100%;
     order: 4;
-    padding: 25px 0;
-    padding-right: 6%;
+    padding-top: 20px;
+    padding-right: 6.3%;
+    font-size: 15px;
     background-color: #f9f9f9;
   }
 }
 
 @media (min-width: $desktop) {
   .main-menu {
-    justify-content: center;
+    height: 88px;
   }
 
   .main-menu__wrapper--pages {
     order: 1;
-    width: 42%;
-    height: 88px;
     background: white;
     padding: 0;
   }
 
   .main-menu__wrapper--tools {
-    width: 33%;
+    //width: 33%;
   }
 
   .main-menu__link {
@@ -193,12 +196,12 @@
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-    padding: 30px 26px;
+    padding: 30px 15px;
     border-bottom: 1px solid $borderColor;
   }
 
   .main-menu__link--catalog {
-    padding-left: 50px;
+    padding-left: 100px;
     border-right: 1px solid $borderColor;
   }
 
@@ -208,6 +211,7 @@
     box-sizing: border-box;
     order: 4;
     width: 50%;
+    height: 100%;
     background-color: #f9f9f9;
   }
 

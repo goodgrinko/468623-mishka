@@ -86,12 +86,27 @@
 @media (min-width: $tablet) {
   .promo {
     display: flex;
-    padding: 0 7%;
+    padding: 0 6.5%;
     background-color: #f9f9f9;
   }
 
   .promo__item {
-    padding: 28px 0 28px 7%;
+    padding: 28px 0 29px 5.1%;
+
+    &:hover,
+    &:focus {
+      padding: 28px 0 34px 5.1%;
+    }
+  }
+
+  .promo__title {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      right: 36px;
+      top: 0;
+    }
   }
 }
 

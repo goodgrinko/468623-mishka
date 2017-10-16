@@ -53,7 +53,6 @@
 
 .item-week__price {
   display: block;
-  width: 260px;
   padding: 19px 0 23px;
   margin: auto;
   text-align: center;
@@ -73,7 +72,7 @@
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 7%;
+    padding: 0 6.2% 45px;
     margin: 0;
   }
 
@@ -82,22 +81,29 @@
 
     &--price {
       order: 5;
+      width: 43%;
+      margin-right: 7%;
     }
 
     &--img {
       overflow: visible;
       order: 4;
       width: 50%;
-      height: 282px;
+      height: 346px;
       text-align: right;
+    }
+
+    &--description {
+      width: 42.5%;
+      margin-right: 7%;
+      margin-top: 50px;
     }
   }
 
   .item-week__title {
+    margin: -3px 0 0;
     width: 85%;
     font-size: 43px;
-    line-height: 50px;
-    padding-bottom: 40px;
   }
 
   .item-week__category {
@@ -106,17 +112,32 @@
     text-align: center;
     box-sizing: border-box;
     width: 15%;
-    padding-bottom: 45px;
-    padding-right: 20px;
+    padding-right: 29px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .item-week__description {
     margin-top: 0;
+    margin-bottom: 38px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .item-week__img {
+    margin-top: 60px;
     width: 333px;
     height: 404px;
+  }
+
+  .item-week__value {
+    padding-left: 5%;
+  }
+
+  .item-week__price {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px 0 34px;
   }
 }
 

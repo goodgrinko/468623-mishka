@@ -21,6 +21,17 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet) {
+  .map {
+    margin-bottom: 55px;
+  }
+
+  .map__marker::after {
+    top: 30%;
+    left: 45%;
+  }
+}
+
 @media (min-width: $desktop) {
   .map {
     width: 45%;

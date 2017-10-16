@@ -25,7 +25,7 @@
     justify-content: flex-start;
     width: 48%;
     height: 88px;
-    padding-left: 6%;
+    padding-left: 6.3%;
     border-right: 1px solid $borderColor;
     border-bottom: 1px solid $borderColor;
   }
@@ -37,8 +37,8 @@
 
   .logo--bottom {
     order: 1;
-    display: block;
-    width: 33.3%;
+    display: flex;
+    width: 35%;
     border: none;
   }
 }

@@ -1,5 +1,11 @@
+.zigzag--tablet {
+  display: none;
+}
+
 @media (min-width: $tablet) {
-  .zigzag::after {
-    display: none;
+  .zigzag--tablet {
+    display: block;
+    position: relative;
+    bottom: 32px;
   }
 }
