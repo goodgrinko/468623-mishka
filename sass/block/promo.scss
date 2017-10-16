@@ -1,49 +1,86 @@
 .promo__item {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 23px 0 23px 9%;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 25px 9% 30px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    padding: 25px 9% 35px;
+  }
 }
 
 .promo__item--interier {
-  background-color: #3cdabb;
+  background-color: #3cd9ba;
 
-  &::after {
-    content: "";
-    width: 41px;
-    height: 62px;
-    position: absolute;
-    top: 22%;
-    right: 18%;
-    opacity: 0.5;
-    background: {
-      image: url("../img/icon-interior.svg");
-      position: 100% 0;
-      repeat: no-repeat;
-    }
+  &:hover,
+  &:focus {
+    background-color: #1bdebb;
   }
 }
 
 .promo__item--toys {
-  background-color: #2accb3;
+  background-color: #2dcab1;
 
-  &::after {
-    content: "";
-    width: 61px;
-    height: 61px;
-    position: absolute;
-    top: 20%;
-    right: 15%;
-    opacity: 0.5;
-    background: {
-      image: url("../img/icon-toy.svg");
-      position: 100% 0;
-      repeat: no-repeat;
-    }
+  &:hover,
+  &:focus {
+    background-color: #00c9ad;
   }
+}
+
+.promo__title {
+  display: block;
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.promo__title--interier::after {
+  content: "";
+  width: 41px;
+  height: 62px;
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  opacity: 0.5;
+  background: {
+    image: url("../img/icon-interior.svg");
+    position: 100% 0;
+    repeat: no-repeat;
+  }
+}
+
+.promo__title--toys::after {
+  content: "";
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  opacity: 0.5;
+  background: {
+    image: url("../img/icon-toy.svg");
+    position: 100% 0;
+    repeat: no-repeat;
+  }
+}
+
+.promo__title:hover::after,
+.promo__title:focus::after {
+  opacity: 0.7;
+}
+
+.promo__title:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet) {

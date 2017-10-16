@@ -2,43 +2,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 22px 0 29px;
+  height: 80px;
   margin: 0 30px;
   border-bottom: 1px solid $borderColor;
 }
 
 .social__link {
-  width: 22px;
-  height: 29px;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+  margin-right: 36px;
+}
 
-  &--insta {
-    margin-right: 41px;
-    background: {
-      image: url("../img/icon-insta.svg");
-      position: 0 100%;
-      repeat: no-repeat;
-    }
-  }
+.social__link--twitter {
+  margin-right: 0;
+}
 
-  &--fb {
-    margin-right: 39px;
-    background: {
-      image: url("../img/icon-fb.svg");
-      position: 0 100%;
-      repeat: no-repeat;
-    }
-  }
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: #46c1ae;
+}
 
-  &--twitter {
-    background: {
-      image: url("../img/icon-twitter.svg");
-      position: 0 100%;
-      repeat: no-repeat;
-    }
-  }
+.social__link:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet) {

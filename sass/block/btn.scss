@@ -11,13 +11,9 @@
   color: $textColor;
   border: 2px solid $textColor;
 
-  &--item-week {
-    width: 260px;
-  }
-
   &--writeus {
-    width: 84%;
-    margin: 0 8%;
+    margin: 0 9%;
+    width: 82%;
     margin-bottom: 39px;
   }
 
@@ -37,6 +33,17 @@
     margin: 0 7% 55px;
     background-color: transparent;
   }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #464646;
+  color: white;
+}
+
+.btn:active {
+  background-color: #464646;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet) {

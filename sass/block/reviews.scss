@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  padding: 0 9% 60px;
+  padding: 0 9% 34px;
 }
 
 .reviews__item {
@@ -68,6 +68,16 @@
       position: 50% 50%;
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 @media (min-width: $tablet) {

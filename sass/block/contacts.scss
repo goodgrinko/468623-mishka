@@ -1,6 +1,9 @@
+.contacts {
+  padding-top: 18px;
+}
+
 .contacts__wrapper {
-  margin-top: 26px;
-  padding: 23px 9% 34px;
+  padding: 0 9% 34px;
   border: none;
   color: $textColor;
   font-size: 15px;
@@ -10,6 +13,7 @@
 
 .contacts__title {
   padding-left: 9%;
+  padding-bottom: 24px;
   text-align: left;
   font-size: 18px;
   line-height: 30px;
@@ -31,6 +35,15 @@
   color: $textColor;
   text-decoration: none;
   border-bottom: 1px solid #62d1ba;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__value--address {

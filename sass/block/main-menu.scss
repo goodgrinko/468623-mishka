@@ -10,11 +10,14 @@
 
 .main-menu__link {
   display: block;
-  padding: 30px 0 30px 75px;
+  box-sizing: border-box;
+  padding: 26px 0 29px 75px;
+  width: 100%;
   font-size: 17px;
   font-weight: bold;
   color: black;
   border-bottom: 1px solid $borderColor;
+  cursor: pointer;
 
   &--catalog,
   &--cart {
@@ -22,18 +25,27 @@
   }
 
   &--cart {
-    position: relative;
+    padding-left: 32px;
   }
 
-  &--cart::before {
-    content: "";
-    position: absolute;
-    top: 35%;
-    left: 32px;
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover .main-menu__icon-cart,
+  &:focus .main-menu__icon-cart {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active .main-menu__icon-cart {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 }
 
@@ -64,8 +76,32 @@
   }
 }
 
+.main-menu__icon-cart {
+  width: 21px;
+  height: 20px;
+  fill: #231f20;
+  opacity: 0.2;
+  margin-right: 18px;
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
 .main-menu__text {
   display: none;
+}
+
+.main-menu__wrapper--tools {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet) {

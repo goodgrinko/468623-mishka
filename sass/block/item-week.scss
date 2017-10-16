@@ -1,7 +1,7 @@
 .item-week {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 9% 40px;
+  padding: 0 9% 24px;
   position: relative;
 }
 
@@ -21,7 +21,6 @@
 }
 
 .item-week__description {
-  width: 260px;
   word-wrap: break-word;
   margin: 20px 0 18px;
   font-size: 15px;
@@ -30,6 +29,7 @@
 }
 
 .item-week__features {
+  width: 100%;
   margin-bottom: 29px;
   border: none;
   border-spacing: 0;
@@ -47,19 +47,24 @@
 
 .item-week__value {
   min-width: 160px;
-  padding: 10px 0 9px 30px;
+  padding: 10px 0 9px 8%;
   border-bottom: 1px solid $borderColor;
 }
 
 .item-week__price {
   display: block;
   width: 260px;
-  padding: 19px 0 26px;
+  padding: 19px 0 23px;
+  margin: auto;
   text-align: center;
   color: $textColor;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+}
+
+.item-week__img {
+  width: 100%;
 }
 
 @media (min-width: $tablet) {

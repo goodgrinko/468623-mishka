@@ -1,4 +1,5 @@
 .copyright {
+  min-height: 79px;
   margin: 0 30px;
   display: flex;
   justify-content: center;
@@ -6,7 +7,7 @@
 }
 
 .copyright__title {
-  margin: 28px 25px 30px 4px;
+  margin: 0 25px 0 8px;
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
@@ -14,15 +15,15 @@
 
 .copyright__link {
   display: block;
-  width: 40px;
-  height: 51px;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background: {
-    image: url("../img/htmlacademy.svg");
-    repeat: no-repeat;
-    position: center;
+}
+
+.copyright__link svg {
+  width: 42px;
+  height: 42px;
+  fill: #63d1bb;
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
