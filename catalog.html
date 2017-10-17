@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,7 +10,11 @@
     <header class="page-header">
       <nav class="main-menu">
         <a class="logo" href="index.html">
-          <img class="logo__img" src="img/logo-mobile.svg" width="85" height="35" alt="Интернет-магазин «Мишка»">
+          <picture class="logo__img">
+            <source media="(min-width: 1100px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 688px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="85" height="35" alt="Интернет-магазин «Мишка»">
+          </picture>
         </a>
         <button class="main-menu__toggle" type="button" name="button">Открыть меню</button>
         <div class="main-menu__wrapper main-menu__wrapper--pages">
@@ -17,11 +22,15 @@
           <a class="main-menu__link main-menu__link--handmade" href="form.html">Вязание на заказ</a>
         </div>
         <div class="main-menu__wrapper main-menu__wrapper--tools">
-          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <form class="main-menu__search search" action="https://echo.htmlacademy.ru" method="post">
+            <svg class="search__icon" width="18" height="18"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
             <input class="search__text" type="search" name="search-text" placeholder="Поиск по сайту">
-            <input class="search__submit" type="submit" name="search-submit" value="Искать">
+            <input class="search__submit visually-hidden" type="submit" name="search-submit" value="Искать">
           </form>
-          <a class="main-menu__link main-menu__link--cart" href="#">Корзина: пока пуста</a>
+          <a class="main-menu__link main-menu__link--cart">
+            <svg class="main-menu__icon-cart" width="21" height="20"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+            <span>Корзина: пока пуста</span>
+          </a>
         </div>
         <div class="main-menu__wrapper main-menu__wrapper--promo">
           <a class="main-menu__link main-menu__link--new" href="#">Новые поступления</a>
@@ -97,16 +106,28 @@
     </main>
     <footer class="page-footer">
       <div class="logo logo--bottom">
-        <img src="../img/logo-mobile.svg" width="85" height="35" alt="Интернет-магазин «Мишка»">
+        <svg width="102" height="34"><use xlink:href="img/sprite.svg#logo-footer"></use></svg>
       </div>
       <div class="social">
-        <a class="social__link social__link--insta" href="#">Мы в Инстаграме</a>
-        <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
-        <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Мы в Инстаграме</span>
+          <svg width="22" height="21"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+        </a>
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Мы в Фейсбуке</span>
+          <svg width="15" height="29"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+          </a>
+        <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере</span>
+          <svg width="24" height="20"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+        </a>
       </div>
       <div class="copyright">
         <p class="copyright__title">Разработано</p>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <a class="copyright__link" href="#">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg width="27" height="34"><use xlink:href="img/sprite.svg#icon-academy"></use></svg>
+        </a>
       </div>
     </footer>
     <div class="modal">

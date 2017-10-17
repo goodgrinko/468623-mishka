@@ -34,3 +34,9 @@
     width: 36.7%;
   }
 }
+
+@media (min-width: $desktop) {
+  .copyright {
+    width: 30%;
+  }
+}

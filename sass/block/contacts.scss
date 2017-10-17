@@ -108,28 +108,39 @@
 
 @media (min-width: $desktop) {
   .contacts {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 8%;
+    padding: 61px 8% 0;
+    box-sizing: border-box;
   }
 
   .contacts__wrapper {
-    width: 50%;
-    padding-left: 175px;
+    width: 44%;
+    padding-right: 0;
+    padding-left: 171px;
   }
 
   .contacts__title {
-    padding-left: 175px;
+    padding-top: 70px;
+    padding-left: 171px;
     width: auto;
+    font-size: 53px;
+    line-height: 57px;
 
     &::after {
-      right: 80%;
+      top: 62px;
+      right: 77%;
     }
   }
 
   .contacts__wrapper tbody {
     flex-direction: column;
+  }
+
+  .contacts__value--email {
+    padding-bottom: 25px;
   }
 
   .contacts__value--address {

@@ -40,6 +40,12 @@
     display: flex;
     width: 35%;
     border: none;
+
+    &:hover,
+    &:focus {
+      fill: #46c1ae;
+      opacity: 1;
+    }
   }
 }
 
@@ -56,8 +62,8 @@
   }
 
   .logo--bottom {
+    width: 29%;
     order: 1;
-    width: 33.3%;
     padding-left: 8%;
   }
 }

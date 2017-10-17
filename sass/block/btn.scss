@@ -72,10 +72,17 @@
 
 @media (min-width: $desktop) {
   .btn--writeus {
+    width: 21.9%;
     position: relative;
-    top: -95px;
+    top: -107px;
     margin: 0;
     margin-left: 175px;
+  }
+
+  .btn--reviews {
+    margin-top: 79px;
+    width: 20%;
+    margin-left: 6.5%;
   }
 
   .btn--video {

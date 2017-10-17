@@ -31,3 +31,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .social {
+    width: 30.5%;
+  }
+}
