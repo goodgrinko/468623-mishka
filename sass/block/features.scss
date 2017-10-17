@@ -101,16 +101,15 @@
 
 @media (min-width: $desktop) {
   .features {
-    padding: 40px 8% 19px;
+    padding: 51px 22% 19px 273px;
   }
 
   .features__title {
-    padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
   }
 
-  .features__list--1 {
-    padding-left: 175px;
+  .features__trait  {
+    width: 45%;
   }
 }

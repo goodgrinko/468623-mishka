@@ -143,13 +143,13 @@
 
 @media (min-width: $desktop) {
   .item-week {
-    padding: 71px 8% 40px;
+    padding: 69px 7.7% 70px;
   }
 
   .item-week__category {
     width: 175px;
     order: 1;
-    padding: 0 40px 45px;
+    padding: 12px 40px 45px;
   }
 
   .item-week__title {
@@ -161,27 +161,40 @@
 
   .item-week__wrapper {
     &--description {
+      width: 44.5%;
+      margin-top: 10px;
+      margin-right: 5.1%;
       box-sizing: border-box;
       order: 3;
-      padding-left: 175px;
+      padding-left: 179px;
     }
 
     &--img {
-      height: 390px;
+      width: 50%;
+      height: 370px;
       order: 4;
     }
 
     &--price {
+      width: 27.6%;
       order: 5;
-      padding-left: 175px;
+      padding-left: 179px;
     }
+  }
+
+  .item-week__description {
+    margin-bottom: 49px;
+  }
+
+  .item-week__price {
+    padding-bottom: 35px;
   }
 
   .item-week__img {
     width: 525px;
     height: 636px;
     position: relative;
-    top: -120px;
+    top: -207px;
     z-index: -1;
   }
 }
