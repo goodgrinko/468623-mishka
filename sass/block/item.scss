@@ -79,10 +79,12 @@
   .item {
     display: flex;
     width: 100%;
+    margin-bottom: 54px;
   }
 
   .item__img-link {
     width: 50%;
+    height: 332px;
   }
 
   .item__wrapper {
@@ -94,10 +96,12 @@
 
   .item__img {
     width: 334px;
-    height: 334px;
+    height: 100%;
   }
 
   .item__title {
+    padding-left: 26px;
+    margin-top: 25px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -111,6 +115,10 @@
   .item__price {
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .item__buy {
+    padding-top: 23px;
   }
 }
 

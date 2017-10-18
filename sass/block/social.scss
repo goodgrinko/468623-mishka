@@ -26,9 +26,14 @@
 
 @media (min-width: $tablet) {
   .social {
+    padding: 10px 0 0;
     order: 2;
-    width: 28.3%;
+    width: 22%;
     margin: 0;
+  }
+
+  .social__link {
+    margin-right: 40px;
   }
 }
 
