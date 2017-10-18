@@ -104,6 +104,10 @@
   flex-wrap: wrap;
 }
 
+.main-menu__wrapper {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .main-menu {
     display: flex;

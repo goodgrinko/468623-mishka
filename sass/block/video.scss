@@ -1,6 +1,16 @@
 .video {
+  position: relative;
   width: 260px;
   border: 1px solid $borderColor;
+}
+
+.video:hover,
+.video:focus {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .video__title {
@@ -26,19 +36,38 @@
 }
 
 .video__player {
-  position: relative;
   margin-bottom: 22px;
+  background: {
+    image: url("../img/video-mobile@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .video__play {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 132px;
+  left: 80px;
   width: 102px;
   height: 78px;
+  border: none;
+  cursor: pointer;
   background: {
+    color: transparent;
     image: url("../img/icon-play.svg");
     repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
 

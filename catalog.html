@@ -46,7 +46,11 @@
       <section class="page-catalog__items">
         <article class="item">
           <a class="item__img-link" href="#">
-            <img class="item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="130" alt="Фото товара «Зайчик-попрыгайчик»">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/photo-hare-desktop@1x.jpg" srcset="img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 688px)" srcset="img/photo-hare-tablet@1x.jpg" srcset="img/photo-hare-tablet@2x.jpg 2x">
+              <img class="item__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="130" alt="Фото товара «Зайчик-попрыгайчик»">
+            </picture>
           </a>
           <div class="item__wrapper">
             <div class="item__description">
@@ -57,13 +61,20 @@
             </div>
             <div class="item__buy">
               <span class="item__price">1 200 руб.</span>
-              <a class="item__cart" href="#">В корзину</a>
+              <a class="item__cart" href="#">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="item__icon-cart" width="21" height="20"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              </a>
             </div>
           </div>
         </article>
         <article class="item">
           <a class="item__img-link" href="#">
-            <img class="item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="130" alt="Фото товара «Корзинка для белья»">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/photo-bowl-desktop@1x.jpg" srcset="img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 688px)" srcset="img/photo-bowl-tablet@1x.jpg" srcset="img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" srcset="img/photo-bowl-mobile@2x.jpg 2x" height="130" alt="Фото товара «Корзинка для белья»">
+            </picture>
           </a>
           <div class="item__wrapper">
             <div class="item__description">
@@ -74,13 +85,20 @@
             </div>
             <div class="item__buy">
               <span class="item__price">690 руб.</span>
-              <a class="item__cart" href="#">В корзину</a>
+              <a class="item__cart" href="#">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="item__icon-cart" width="21" height="20"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              </a>
             </div>
           </div>
         </article>
         <article class="item">
           <a class="item__img-link" href="#">
-            <img class="item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="130" alt="Фото товара «Большая корзинка для игрушек»">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/photo-toys-desktop@1x.jpg" srcset="img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 688px)" srcset="img/photo-toys-tablet@1x.jpg" srcset="img/photo-toys-tablet@2x.jpg 2x">
+              <img class="item__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="130" alt="Фото товара «Большая корзинка для игрушек»">
+            </picture>
           </a>
           <div class="item__wrapper">
             <div class="item__description">
@@ -91,15 +109,21 @@
             </div>
             <div class="item__buy">
               <span class="item__price">1 500 руб.</span>
-              <a class="item__cart" href="#">В корзину</a>
+              <a class="item__cart" href="#">
+                <span class="visually-hidden">В корзину</span>
+                <svg class="item__icon-cart" width="21" height="20"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              </a>
             </div>
           </div>
         </article>
       </section>
       <section class="video">
         <h3 class="video__title">Процесс производства</h3>
-        <video class="video__player" src="videofile.ogg" autoplay poster="img/video-mobile@1x.jpg" width="260" height="150">
+        <video class="video__player" src="videofile.ogg" autoplay width="260" height="150">
         </video>
+        <button class="video__play" type="button" name="button">
+          <span class="visually-hidden">Пауза/Продолжить видео</span>
+        </button>
         <p class="video__description">По просьбам наших любимых&nbsp;фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="btn btn--video" href="#">Сделать заказ</a>
       </section>
