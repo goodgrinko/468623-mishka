@@ -21,6 +21,11 @@
 }
 
 @media (min-width: $desktop) {
+  .page-catalog {
+    padding-top: 71px;
+    margin: 0 4.3%;
+  }
+
   .page-catalog__items {
     display: flex;
     flex-wrap: wrap;

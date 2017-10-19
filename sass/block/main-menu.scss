@@ -182,14 +182,15 @@
   }
 
   .main-menu__wrapper--pages {
-    width: 44%;
+    width: 43.5%;
     order: 1;
     background: white;
-    padding: 0;
+    padding: 0 0 0 4.3%;
+    border-bottom: 1px solid $borderColor;
   }
 
   .main-menu__wrapper--tools {
-    width: 36%;
+    width: 34.5%;
   }
 
   .main-menu__link {
@@ -202,29 +203,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 30px 0;
-    border-bottom: 1px solid $borderColor;
   }
 
   .main-menu__link--catalog {
-    width: 94%;
-    padding-left: 100px;
+    width: 74%;
     border-right: 1px solid $borderColor;
   }
 
   .main-menu__link--handmade {
-    padding-left: 35px;
+    padding-left: 7.5%;
   }
 
   .main-menu__link--cart {
-    padding: 30px 19% 0 0;
+    padding: 30px 10% 0 0;
+  }
+
+  .main-menu__icon-cart {
+    position: relative;
+    top: 5px;
+    left: 0;
   }
 
   .main-menu__wrapper--promo {
     z-index: 100;
     display: flex;
-    padding-left: 100px;
     box-sizing: border-box;
     order: 4;
+    padding-left: 4.3%;
     width: 50%;
     height: 100%;
     background-color: transparent;
@@ -244,7 +249,7 @@
 
   .main-menu__text {
     z-index: 100;
-    padding-right: 8%;
+    padding-right: 4.3%;
     background-color: transparent;
   }
 }

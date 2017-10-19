@@ -52,7 +52,7 @@
 @media (min-width: $desktop) {
   .logo {
     order: 2;
-    width: 20%;
+    width: 22%;
     padding-left: 0;
   }
 
@@ -62,8 +62,9 @@
   }
 
   .logo--bottom {
-    width: 29%;
+    width: auto;
     order: 1;
-    padding-left: 8%;
+    padding-left: 4.4%;
+    margin-right: 11%;
   }
 }
