@@ -1,36 +1,39 @@
 .form__group {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 21px;
-  overflow: hidden;
+}
+
+.form__wrapper {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 9.3%;
+}
+
+.form__line {
+  z-index: 1;
+  position: relative;
+  top: -25px;
+  left: 0;
 }
 
 .form__group-title {
-  width: 100%;
-  padding: 0;
-  padding-left: 7%;
-  margin-bottom: 33px;
-  box-sizing: border-box;
+  z-index: 10;
+  width: auto;
+  padding-right: 10px;
+  position: relative;
   color: #63d1bb;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
-  background: url("../img/line.png") no-repeat;
-  background-position: 60px 50%;
+  background-color: white;
 
   &--tel,
   &--email {
     padding: 0;
   }
-}
-
-.form__wrapper {
-  box-sizing: border-box;
-  padding: 0 7%;
 }
 
 .form__label {
