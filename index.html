@@ -73,6 +73,7 @@
           </table>
         </div>
         <div class="item-week__wrapper item-week__wrapper--img">
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
           <img class="item-week__img" src="img/triple-set-desktop@1x.jpg" srcset="img/triple-set-desktop@2x.jpg 2x" width="260" height="315" alt="Изображение товара">
         </div>
         <div class="item-week__wrapper item-week__wrapper--price">
@@ -160,18 +161,21 @@
         </a>
       </div>
     </footer>
-    <div class="modal">
-      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-      <p class="modal__options">Выберите размер:</p>
-      <form class="modal__form" action="index.html" method="post">
-        <input class="modal__radio" type="radio" name="size" value="S" id="S">
-        <label class="modal__size" for="S">S</label>
-        <input class="modal__radio" type="radio" name="size" value="M" id="M">
-        <label class="modal__size" for="M">M</label>
-        <input class="modal__radio" type="radio" name="size" value="L" id="L">
-        <label class="modal__size" for="L">L</label>
-        <button class="btn btn--modal" type="submit" name="btn-size">Добавить</button>
-      </form>
+    <div class="substrate">
+      <div class="modal">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <p class="modal__options">Выберите размер:</p>
+        <form class="modal__form" action="index.html" method="post">
+          <input class="modal__radio" type="radio" name="size" value="S" id="S" checked>
+          <label class="modal__size" for="S">S</label>
+          <input class="modal__radio" type="radio" name="size" value="M" id="M">
+          <label class="modal__size" for="M">M</label>
+          <input class="modal__radio" type="radio" name="size" value="L" id="L">
+          <label class="modal__size" for="L">L</label>
+          <button class="btn btn--modal" type="submit" name="btn-size">Добавить</button>
+        </form>
+      </div>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2BT_YbgHihSt4zwfBRLmxpQq_vyS97rE&callback=initMap"></script>
   </body>
 </html>
