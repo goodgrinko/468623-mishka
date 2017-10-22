@@ -75,6 +75,7 @@
   font-weight: bold;
   line-height: 18px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &--radio {
     min-height: 35px;
@@ -92,6 +93,15 @@
     border-radius: 50%;
   }
 
+  &--radio:hover::before,
+  &--radio:focus::before {
+    border-color: #3ad9b9;
+  }
+
+  &--radio:active::before {
+    border-color: #cbcbcb;
+  }
+
   &--checkbox {
     padding-top: 10px;
     margin-bottom: 33px;
@@ -105,6 +115,15 @@
     width: 36px;
     height: 35px;
     border: 2px solid $textColor;
+  }
+
+  &--checkbox:hover::before,
+  &--checkbox:focus::before {
+    border-color: #3ad9b9;
+  }
+
+  &--checkbox:active::before {
+    border-color: #cbcbcb;
   }
 }
 
@@ -145,6 +164,12 @@
   font-size: 17px;
   line-height: 18px;
 
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #62d1ba;
+  }
+
   &::placeholder {
     opacity: 0.3;
     font-family: "OpenSans", sans-serif;
@@ -156,20 +181,10 @@
   &--tel {
     padding-top: 10px;
     margin-bottom: 25px;
-    background: {
-      image: url("../img/icon-phone.svg");
-      repeat: no-repeat;
-      position: 95.8% 25%;
-    }
   }
 
   &--email {
     padding-top: 10px;
-    background: {
-      image: url("../img/icon-mail.svg");
-      repeat: no-repeat;
-      position: 97% 50%;
-    }
   }
 
   &--wishes {
@@ -178,6 +193,33 @@
     padding: 13px 15px;
     border: 2px solid $textColor;
   }
+}
+
+.form__icon {
+  position: absolute;
+  fill: #cccccc;
+
+  &--tel {
+    top: 41px;
+    right: 12%;
+  }
+
+  &--email {
+    top: 148px;
+    right: 10.5%;
+  }
+}
+
+.form__text--tel:hover ~ .form__icon--tel,
+.form__text--tel:focus ~ .form__icon--tel,
+.form__text--tel:active ~ .form__icon--tel {
+  fill: #3ad9b9;
+}
+
+.form__text--email:hover ~ .form__icon--email,
+.form__text--email:focus ~ .form__icon--email,
+.form__text--email:active ~ .form__icon--email {
+  fill: #3ad9b9;
 }
 
 .form__name {
@@ -355,6 +397,18 @@
     }
   }
 
+  .form__icon {
+    &--tel {
+      top: 61px;
+      right: 10%;
+    }
+
+    &--email {
+      top: 136px;
+      right: 9.4%;
+    }
+  }
+
   .form__notes {
     display: flex;
     justify-content: space-between;
@@ -377,12 +431,91 @@
 }
 
 @media (min-width: $desktop) {
-  .form__label--checkbox {
-    width: 20%;
+  .form__wrapper {
+    padding: 0 9%;
+    margin-bottom: 59px;
+
+    &--checkbox {
+      padding: 55px 11.9% 21px 9%;
+    }
+
+    &--name {
+      padding: 3px 19.6% 0 9%;
+      margin-bottom: 14px;
+    }
+
+    &--contacts {
+      padding: 62px 19.5% 14px 9%;
+      margin-bottom: 49px;
+    }
+
+    &--wishes {
+      padding: 0 19.6% 0 9%;
+      margin-bottom: 12px;
+    }
+  }
+
+  .form__group-title {
+    width: 11%;
+
+    &--radio {
+      width: 9%;
+    }
+
+    &--color {
+      width: 10.6%;
+    }
+  }
+
+  .form__label {
+    &--radio {
+      width: 87.1%;
+    }
+
+    &--checkbox {
+      width: 28.9%;
+    }
+  }
+
+  .form__name {
+    &--first {
+      width: 8.9%;
+    }
+
+    &--last,
+    &--middle {
+      width: 15.4%;
+    }
+  }
+
+  .form__text {
+    &--first {
+      width: 76.2%;
+    }
+
+    &--last,
+    &--middle {
+      width: 69.7%;
+    }
+
+    &--tel,
+    &--email,
+    &--wishes {
+      width: 85.2%;
+    }
+  }
+
+  .form__icon {
+    &--tel {
+      right: 20.3%;
+    }
+
+    &--email {
+      right: 19.9%;
+    }
   }
 
   .form__notes {
-    box-sizing: border-box;
-    padding-left: 18%;
+    padding: 0 19.6%;
   }
 }

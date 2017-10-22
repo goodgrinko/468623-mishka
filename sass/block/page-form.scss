@@ -1,7 +1,6 @@
 .page-form__description {
   margin: 0 9.3% 18px;
   padding-top: 22px;
-  max-width: 620px;
   font-size: 13px;
   line-height: 24px;
   color: $textColor;
@@ -13,5 +12,12 @@
     padding-top: 10px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-form__description {
+    margin: 0 18% 65px 19.5%;
+    padding-top: 63px;
   }
 }

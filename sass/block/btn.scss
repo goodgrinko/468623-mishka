@@ -10,6 +10,7 @@
   text-align: center;
   color: $textColor;
   border: 2px solid $textColor;
+  cursor: pointer;
 
   &--writeus {
     margin: 0 9%;
@@ -88,5 +89,9 @@
 
   .btn--video {
     width: 100%;
+  }
+
+  .btn--form {
+    width: 33%;
   }
 }
