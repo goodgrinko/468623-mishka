@@ -15,6 +15,7 @@
 }
 
 .map__marker::after {
+  display: none;
   content: "";
   width: 67px;
   height: 100px;
@@ -38,7 +39,7 @@
 
 @media (min-width: $desktop) {
   .map {
-    width: 50%;
+    width: 46.5%;
     background: {
       image: url("../img/map-desktop@1x.jpg");
     }
