@@ -14,26 +14,9 @@
   }
 }
 
-.map__marker::after {
-  display: none;
-  content: "";
-  width: 67px;
-  height: 100px;
-  position: absolute;
-  top: 30%;
-  left: 43%;
-  background-image: url("../img/icon-map-pin.svg");
-  background-repeat: no-repeat;
-}
-
 @media (min-width: $tablet) {
   .map {
     margin-bottom: 55px;
-  }
-
-  .map__marker::after {
-    top: 30%;
-    left: 45%;
   }
 }
 
