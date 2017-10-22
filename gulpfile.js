@@ -71,6 +71,8 @@ gulp.task("build", function(done) {
   run(
     "clean",
     "copy",
+    "webp",
+    "images",
     "style",
     "html",
     done
