@@ -129,29 +129,31 @@
 
 .form__input {
   display: none;
+}
 
-  &--radio:checked + label::after {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 11px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #39dbba;
-  }
+.form__input--radio:checked + label::after,
+.form__input--radio:active + label::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #39dbba;
+}
 
-  &--checkbox:checked + label::after {
-    content: "";
-    position: absolute;
-    left: 14px;
-    top: 4px;
-    width: 10px;
-    height: 20px;
-    transform: rotate(44deg);
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-  }
+.form__input--checkbox:checked + label::after,
+.form__input--checkbox:active + label::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 4px;
+  width: 10px;
+  height: 20px;
+  transform: rotate(44deg);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .form__text {
@@ -330,14 +332,16 @@
     }
   }
 
-  .form__input--radio:checked + label::after {
+  .form__input--radio:checked + label::after,
+  .form__input--radio:active + label::after {
     left: 16px;
     top: 8px;
     width: 21px;
     height: 21px;
   }
 
-  .form__input--checkbox:checked + label::after {
+  .form__input--checkbox:checked + label::after,
+  .form__input--checkbox:active + label::after {
     top: 0;
     left: 18px;
     width: 15px;

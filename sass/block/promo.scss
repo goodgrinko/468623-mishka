@@ -5,29 +5,14 @@
   width: 100%;
   padding: 25px 9% 30px;
   box-sizing: border-box;
-
-  &:hover,
-  &:focus {
-    padding: 25px 9% 35px;
-  }
 }
 
 .promo__item--interier {
   background-color: #3cd9ba;
-
-  &:hover,
-  &:focus {
-    background-color: #1bdebb;
-  }
 }
 
 .promo__item--toys {
   background-color: #2dcab1;
-
-  &:hover,
-  &:focus {
-    background-color: #00c9ad;
-  }
 }
 
 .promo__title {
@@ -74,15 +59,6 @@
   }
 }
 
-.promo__title:hover::after,
-.promo__title:focus::after {
-  opacity: 0.7;
-}
-
-.promo__title:active::after {
-  opacity: 0.3;
-}
-
 @media (min-width: $tablet) {
   .promo {
     display: flex;
@@ -92,11 +68,6 @@
 
   .promo__item {
     padding: 28px 0 29px 5.1%;
-
-    &:hover,
-    &:focus {
-      padding: 28px 0 34px 5.1%;
-    }
   }
 
   .promo__title {
@@ -113,9 +84,34 @@
 @media (min-width: $desktop) {
   .promo {
     padding: 0 4.4%;
+    align-items: flex-end;
   }
 
   .promo__item {
     padding-left: 3.5%;
+
+    &:hover,
+    &:focus {
+      padding-top: 33px;
+    }
+
+    &--interier:hover,
+    &--interier:focus {
+      background-color: #1bdebb;
+    }
+
+    &--toys:hover,
+    &--toys:focus {
+      background-color: #00c9ad;
+    }
+  }
+
+  .promo__title:hover::after,
+  .promo__title:focus::after {
+    opacity: 0.7;
+  }
+
+  .promo__title:active::after {
+    opacity: 0.3;
   }
 }
