@@ -8,4 +8,16 @@
     position: relative;
     bottom: 32px;
   }
+
+  .zigzag--short {
+    width: 87.6%;
+    margin: 0 6.2%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .zigzag--short {
+    width: 92%;
+    margin: 0 4%;
+  }
 }

@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -172,7 +175,7 @@
         </a>
       </div>
     </footer>
-    <div class="substrate">
+    <div class="overlay">
       <div class="modal">
         <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
         <p class="modal__options">Выберите размер:</p>
@@ -187,5 +190,6 @@
         </form>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
