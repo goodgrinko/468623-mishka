@@ -15,3 +15,25 @@ if(map != null) {
     });
   };
 }
+
+var btn = document.querySelector('.btn--order');
+var btnItem = document.querySelectorAll('.item__cart');
+var modalCart = document.querySelector('.overlay');
+
+if (modalCart!= null) {
+  btn.addEventListener('click' function(){
+    modalCart.classList.add('overlay--active');
+  });
+
+  btnItem.addEventListener('click' function(){
+    modalCart.classList.add('overlay--active');
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalCart.classList.contains('overlay--active')) {
+        modalCart.classList.remove('overlay--active');
+      }
+    }
+  });
+}

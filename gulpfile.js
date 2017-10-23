@@ -7,7 +7,6 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var minify = require("gulp-csso");
-var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var gulp = require("gulp");
 var imagemin = require("gulp-imagemin");
@@ -29,14 +28,6 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
-});
-
-gulp.task("scripts", function () {
-  return gulp.src("js/*.js")
-  .pipe(uglify())
-  .pipe(rename("script.min.js"))
-  .pipe(gulp.dest("build/js"))
-  .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -72,7 +63,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("js/*.js", ["scripts"]);
+  gulp.watch("js/*.js");
   gulp.watch("*.html").on("change", server.reload);
 });
 
@@ -83,7 +74,6 @@ gulp.task("build", function(done) {
     "webp",
     "images",
     "style",
-    "scripts",
     "html",
     done
   );
