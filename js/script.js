@@ -35,15 +35,17 @@ if (btn != null) {
 }
 
 if (btnItem != null) {
-    btnItem.addEventListener('click', function(){
+  for (var i=0; i<btnItem.length; i++) {
+    btnItem[i].addEventListener('click', function() {
       modalCart.classList.add('overlay--active');
     });
+  }
 
-    window.addEventListener('keydown', function (evt) {
-      if (evt.keyCode === 27) {
-        if (modalCart.classList.contains('overlay--active')) {
-          modalCart.classList.remove('overlay--active');
-        }
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalCart.classList.contains('overlay--active')) {
+        modalCart.classList.remove('overlay--active');
       }
-    });
+    }
+  });
 }
