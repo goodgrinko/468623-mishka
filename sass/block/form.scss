@@ -127,8 +127,9 @@
   }
 }
 
-.form__input {
-  display: none;
+.form__input--radio:focus + label::before,
+.form__input--checkbox:focus + label::before {
+  border-color: #3ad9b9;
 }
 
 .form__input--radio:checked + label::after,
